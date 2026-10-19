@@ -1,0 +1,81 @@
+{
+  "name": "Living Balance Engine",
+  "version": "1.0.0",
+  "status": "research_prototype",
+  "core_values": [
+    "wisdom",
+    "will",
+    "love",
+    "faith",
+    "hope"
+  ],
+  "decision_dimensions": [
+    "benefit",
+    "harm",
+    "consent",
+    "reversibility",
+    "uncertainty",
+    "dignity"
+  ],
+  "hard_constraints": [
+    "do_not_recommend_intentional_serious_harm_to_innocents",
+    "do_not_treat_unverified_metaphysical_claims_as_established_facts",
+    "do_not_auto_apply_generated_rules_without_review",
+    "preserve_auditability_and_version_history"
+  ],
+  "tradition_lenses": [
+    {
+      "name": "Golden Mean",
+      "use": "context-sensitive balance, not arithmetic compromise"
+    },
+    {
+      "name": "Christian ethical traditions",
+      "use": "love, mercy, repentance, responsibility"
+    },
+    {
+      "name": "Daoist thought",
+      "use": "moderation, naturalness, restraint from needless coercion"
+    },
+    {
+      "name": "I Ching",
+      "use": "change and contextual interpretation"
+    },
+    {
+      "name": "Sun Tzu",
+      "use": "strategic foresight and prevention of needless conflict"
+    },
+    {
+      "name": "gunas",
+      "use": "reflective lens for clarity, activity, inertia"
+    },
+    {
+      "name": "qigong and Falun Gong",
+      "use": "cultural/spiritual practices; empirical claims require independent testing"
+    },
+    {
+      "name": "shamanic traditions",
+      "use": "study specific traditions respectfully; do not homogenize them"
+    },
+    {
+      "name": "Slavic Vedic / Inglism traditions",
+      "use": "cultural-spiritual lenses; historical claims require source checking"
+    },
+    {
+      "name": "uncertainty principle",
+      "use": "analogy for limits of knowledge only; not proof of free will"
+    }
+  ],
+  "blue_matrix": {
+    "meaning": "sensor-fusion layer for calibrated physical measurements",
+    "pipeline": [
+      "timestamp",
+      "calibration",
+      "quality_check",
+      "fusion",
+      "anomaly_detection",
+      "uncertainty_estimation",
+      "audit_log"
+    ],
+    "metaphysical_claims": "not inferred from sensor data"
+  }
+}

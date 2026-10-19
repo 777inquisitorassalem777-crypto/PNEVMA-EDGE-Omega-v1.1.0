@@ -1,0 +1,31 @@
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: symbio
+      POSTGRES_USER: symbio
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-symbio-local-only}
+    ports: ["5432:5432"]
+    volumes: [symbio_pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U symbio -d symbio"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  api:
+    build: .
+    environment:
+      SYMBIO_POSTGRES_DSN: postgresql://symbio:${POSTGRES_PASSWORD:-symbio-local-only}@postgres:5432/symbio
+      SYMBIO_DB_PATH: /app/data/symbio_core.sqlite3
+      SYMBIO_RESULTS_DIR: /app/results
+      SYMBIO_LLM_BASE_URL: ${SYMBIO_LLM_BASE_URL:-http://host.docker.internal:11434/v1}
+      SYMBIO_LLM_MODEL: ${SYMBIO_LLM_MODEL:-llama3.2}
+      SYMBIO_LLM_API_KEY: ${SYMBIO_LLM_API_KEY:-}
+      SYMBIO_USE_LLM: ${SYMBIO_USE_LLM:-false}
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data", "./results:/app/results"]
+    depends_on:
+      postgres: {condition: service_healthy}
+volumes:
+  symbio_pgdata:

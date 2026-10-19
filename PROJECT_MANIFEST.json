@@ -1,0 +1,19 @@
+{
+  "project": "PNEVMA-EDGE Omega",
+  "version": "1.1.0",
+  "base": "PNEVMA-EDGE-Omega-v1.0.0",
+  "changes": [
+    "provenance-aware claim schema",
+    "multi-perspective review preserving support and objections",
+    "intuition/invention candidate generator with falsification and risk fields",
+    "five-gate self-balancing change evaluation with human approval",
+    "documentation and tests"
+  ],
+  "limits": [
+    "does not create or verify consciousness/soul",
+    "no real hardware drivers included",
+    "no background scheduler is running",
+    "external services require deployment configuration and independent integration tests",
+    "religious/philosophical interpretations are not treated as empirical proof"
+  ]
+}

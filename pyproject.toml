@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pnevma-edge-omega"
+version = "1.1.0"
+description = "PNEVMA-EDGE Ω provenance-aware reflective AI research platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.27"]
+postgres = ["psycopg[binary]>=3.1", "pgvector>=0.2.5"]
+embeddings = ["sentence-transformers>=2.6"]
+all = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "psycopg[binary]>=3.1", "pgvector>=0.2.5", "sentence-transformers>=2.6"]
+
+[project.scripts]
+symbio-core = "symbio_core.cli:main"
+symbio-experiment = "symbio_core.experiments:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

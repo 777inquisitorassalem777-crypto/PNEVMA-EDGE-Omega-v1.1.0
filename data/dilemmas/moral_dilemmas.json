@@ -1,0 +1,98 @@
+[
+  {
+    "id": "D001",
+    "category": "privacy",
+    "scenario": "Организация хочет использовать персональные данные пользователей для новой функции. Часть пользователей не давала согласия, а отказ может снизить качество сервиса.",
+    "proposed_action": {
+      "harm_risk": 0.55,
+      "benefit": 0.65,
+      "consent": 0.2,
+      "reversibility": 0.6,
+      "uncertainty": 0.5
+    }
+  },
+  {
+    "id": "D002",
+    "category": "resource-allocation",
+    "scenario": "Во время дефицита ресурсов команда должна выбрать между быстрым решением для большинства и адресной помощью небольшой уязвимой группе.",
+    "proposed_action": {
+      "harm_risk": 0.5,
+      "benefit": 0.7,
+      "consent": 0.7,
+      "reversibility": 0.5,
+      "uncertainty": 0.4
+    }
+  },
+  {
+    "id": "D003",
+    "category": "whistleblowing",
+    "scenario": "Сотрудник обнаружил вероятный риск для общественной безопасности. Публичное раскрытие может предупредить людей, но раскрыть личные данные невиновных.",
+    "proposed_action": {
+      "harm_risk": 0.7,
+      "benefit": 0.8,
+      "consent": 0.3,
+      "reversibility": 0.4,
+      "uncertainty": 0.6
+    }
+  },
+  {
+    "id": "D004",
+    "category": "medical-uncertainty",
+    "scenario": "Две меры помощи имеют неполные доказательства. Одна потенциально эффективнее, но её последствия труднее отменить; пациент может участвовать в выборе.",
+    "proposed_action": {
+      "harm_risk": 0.65,
+      "benefit": 0.7,
+      "consent": 0.9,
+      "reversibility": 0.2,
+      "uncertainty": 0.75
+    }
+  },
+  {
+    "id": "D005",
+    "category": "fairness",
+    "scenario": "Алгоритм ранжирования улучшает средний результат, но систематически ухудшает положение малой группы. Данных недостаточно, чтобы понять причину.",
+    "proposed_action": {
+      "harm_risk": 0.7,
+      "benefit": 0.6,
+      "consent": 0.5,
+      "reversibility": 0.7,
+      "uncertainty": 0.8
+    }
+  },
+  {
+    "id": "D006",
+    "category": "truth-vs-kindness",
+    "scenario": "Человек просит честную обратную связь о важной работе. Полная прямота может причинить эмоциональную боль, но уклончивость лишит его возможности исправиться.",
+    "proposed_action": {
+      "harm_risk": 0.25,
+      "benefit": 0.7,
+      "consent": 0.9,
+      "reversibility": 0.9,
+      "uncertainty": 0.25
+    }
+  },
+  {
+    "id": "D007",
+    "category": "security-disclosure",
+    "scenario": "Исследователь обнаружил уязвимость в общественно значимой системе. Публичное описание деталей может ускорить исправление и одновременно облегчить злоупотребление.",
+    "proposed_action": {
+      "harm_risk": 0.8,
+      "benefit": 0.75,
+      "consent": 0.4,
+      "reversibility": 0.3,
+      "uncertainty": 0.55
+    }
+  },
+  {
+    "id": "D008",
+    "category": "conflict",
+    "scenario": "Две группы предъявляют несовместимые версии конфликта. Нужно принять временное решение, не имея независимого подтверждения всех утверждений.",
+    "proposed_action": {
+      "harm_risk": 0.6,
+      "benefit": 0.55,
+      "consent": 0.5,
+      "reversibility": 0.8,
+      "uncertainty": 0.85
+    }
+  }
+]
